@@ -1,5 +1,6 @@
 /* SECCIÓN DE IMPORT */
 import '../styles/App.scss';
+import image from '../images/friends-logo-cover.png';
 // import phrases from '../data/phrases.json';
 import { useEffect, useState } from 'react';
 /* SECCIÓN DEL COMPONENTE */
@@ -71,7 +72,8 @@ function App() {
   return (
     <div className="page">
       {/* header */}
-      <header>
+      <header className='header'>
+        <img className='header__img' src={image} alt="logo sofa friends" />
         <h1>Frases de Friends</h1>
       </header>
       {/* main filter*/}
